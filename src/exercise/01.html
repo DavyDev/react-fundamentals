@@ -14,3 +14,33 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    
+</body>
+
+<script type="module">
+    const divRoot = document.createElement("div")
+    divRoot.id = "Root"
+    document.body.append(divRoot)
+    const novaDiv = document.createElement("div")
+    novaDiv.className = "container"
+    novaDiv.textContent = "Hello World"
+    divRoot.appendChild(novaDiv)
+
+    document.append(divRoot)
+
+
+    
+</script>
+
+</html>
