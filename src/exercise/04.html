@@ -19,10 +19,19 @@
     // 💰 {message({children: 'Hello Wo rld'})} {message({children: 'Goodbye World'})}
     const element = (
       <div className="container">
-        {message({children: "Hello World"})}
-        {message({children: "Goodbye world"})}
+        <Message2  greeting = "Opaaa" subject = "Eaia"   />
       </div>
     )
+
+    function Message2({greeting, subject}){
+        return(
+            <React.Fragment>
+            {greeting},
+            {subject}
+        </React.Fragment>
+        )
+        
+    }
 
     // 💯 This is only the first step to making actual React components. The rest is in the extra credit!
     ReactDOM.render(element,document.getElementById('root'))
